@@ -19,8 +19,7 @@ public class ProxyController : ControllerBase
         this._httpClient = httpClient;
     }
 
-    [HttpPost]
-    [Route("proxy")]
+    [HttpPost("proxy")]
     public async Task<IActionResult> ProxyRequestAsync([FromBody] ProxyRequest request)
     {
         if (string.IsNullOrEmpty(request.Method) || string.IsNullOrEmpty(request.Url))
