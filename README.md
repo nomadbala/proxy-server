@@ -56,11 +56,11 @@
    dotnet run
 ```
 
-Сервер будет запущен на http://localhost:5000.
+Сервер будет запущен на http://localhost:44331.
 
 ### Использование
 
-Для использования сервера отправьте POST-запрос на http://localhost:5000/proxy с JSON-телом, содержащим метод, URL и заголовки запроса:
+Для использования сервера отправьте POST-запрос на http://localhost:44331/Proxy/proxy с JSON-телом, содержащим метод, URL и заголовки запроса:
 
 ```
 {
@@ -115,6 +115,10 @@
 ```
   make stop
 ```
+
+## Render link
+
+<a https://proxy-server-zro1.onrender.com/Proxy/proxy>https://proxy-server-zro1.onrender.com/Proxy/proxy</a>
 
 ## Документация
 
